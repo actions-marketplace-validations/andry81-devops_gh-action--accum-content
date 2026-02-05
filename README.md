@@ -133,6 +133,12 @@ All tutorials: https://github.com/andry81/index#tutorials
   > The actual hash of the commit can not be know on the moment of the commit. So instead of the commit hash, an approximate date of the commit is used (~ +5 min ahead) in format of:
   > `https://github.com/{{REPO_OWNER}}/{{REPO}}--gh-content-cache/commits?branch={{BRANCH}}&time_zone=utc&until=YYYY-MM-DD`
 
+* `YAML_OUTPUT_LR=<%-encoded string>`:
+  Adds characters to each line end of yaml output file (last LF can be omitted).
+
+* `CHANGELOG_FILE_LR=<%-encoded string>`:
+  Adds characters to each line end of changelog output file (last LF can be omitted).
+
 * Can run download validation shell code after a file download (see `content-config.yml` example below).
 
 * `USE_APT_GET_INSTALL_CMDLINE="<apt-get-install-cmdline>"`, `USE_PYTHON3_PIP_INSTALL_CMDLINE="<pip-install-cmdline>"`:
@@ -379,6 +385,8 @@ jobs:
           #  NO_DOWNLOAD_ENTRIES_AND_CREATE_EMPTY_INSTEAD=1
           #  "USE_APT_GET_INSTALL_CMDLINE=-y xmlstarlet"
           #  "USE_PYTHON3_PIP_INSTALL_CMDLINE=xq"
+          #  YAML_OUTPUT_LR=%0D
+          #  CHANGELOG_FILE_LR=%0D
 ```
 
 > [!NOTE]

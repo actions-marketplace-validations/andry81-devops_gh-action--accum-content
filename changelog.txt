@@ -1,3 +1,6 @@
+2026.02.05:
+* changed: README.md: readme update
+
 2026.01.15:
 * new: action.yml: `disable_yaml_edit_format_restore` action input variable to set `DISABLE_YAML_EDIT_FORMAT_RESTORE_BY_DIFF_MERGE_WORKAROUND` environment variable if not set
 * changed: README.md: readme update
